@@ -9,8 +9,10 @@
   "author": "MathieuC",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
     "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
     "mariadb": "^3.3.2",
     "sequelize": "^6.37.4",
     "serve-favicon": "^2.5.0"
