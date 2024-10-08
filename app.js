@@ -2,6 +2,8 @@
     const favicon = require('serve-favicon')
     const bodyParser = require('body-parser')
     const sequelize = require('./src/db/sequelize')
+    const cors = require('cors')
+    const {use} = require("bcrypt/promises");
 
 
     const app = express();
@@ -9,7 +11,8 @@
 
     app
         .use(favicon(__dirname + '/favicon.ico'))
-        .use(bodyParser.json());
+        .use(bodyParser.json())
+         .use(cors())
 
     sequelize.initDb()
 
